@@ -11,7 +11,7 @@
         <v-spacer></v-spacer>
         <v-btn
           v-for="link in navigation"
-          :key="link"
+          :key="link.to"
           text
           :to="link.to"
           router
