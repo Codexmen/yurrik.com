@@ -38,6 +38,7 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxt/content'
   ],
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
@@ -56,8 +57,8 @@ export default {
           success: colors.green.accent3
         },
         light: {
-          primary: '#1976D2',
-          secondary: '#424242',
+          primary: '#1d4b7c',
+          secondary: '#cef0ff',
           accent: '#82B1FF',
           error: '#FF5252',
           info: '#2196F3',
