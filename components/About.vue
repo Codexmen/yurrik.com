@@ -1,6 +1,6 @@
 <template>
-  <v-col>
-    <div class="text-h3 pb-8 text-center">About</div>
+  <div>
+    <div class="text-h4 font-weight-bold pb-8 primary--text">About</div>
     <p>Hey there! My name is Yurii Kovalenko. I am a frontend developer since 2010 from Melitopol, Ukraine.</p>
     <div class="text-h5 font-weight-bold py-6">Background</div>
     <v-divider class="pb-6" />
@@ -20,7 +20,7 @@
       <li><a target="_blank" href="https://twitter.com/CodexMen">Twitter</a></li>
       <li><a target="_blank" href="https://github.com/Codexmen">GitHub</a></li>
     </ul>
-  </v-col>
+  </div>
 </template>
 
 <script>

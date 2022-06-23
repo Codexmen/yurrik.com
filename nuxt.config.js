@@ -57,7 +57,7 @@ export default {
           success: colors.green.accent3
         },
         light: {
-          primary: '#1d737c',
+          primary: '#1d4b7c',
           secondary: '#cef0ff',
           accent: '#82B1FF',
           error: '#FF5252',
