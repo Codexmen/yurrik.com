@@ -79,5 +79,12 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   },
-  target: 'static'
+  target: 'static',
+  content: {
+    markdown: {
+      prism: {
+        theme: 'prism-themes/themes/prism-cb.css'
+      }
+    }
+  }
 }

@@ -1,5 +1,5 @@
 <template>
-  <MathRound />
+  <ScrollExample />
 </template>
 
 <script>
