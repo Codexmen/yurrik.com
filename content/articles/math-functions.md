@@ -1,11 +1,11 @@
 ---
-title: Rounding numbers with Math.round Math.ceil Math.floor and Math.trunc
+title: Rounding numbers with Math module
 description: Learning how to use @nuxt/content to create a blog
 summary: In this article I will describe how to round numbers using JavaScript and how to easily remember names of these functions.
-length: 4 mins read
+length: 4 minutes read
 ---
 
-# Rounding numbers with Math.round Math.ceil Math.floor and Math.trunc
+# Rounding numbers with Math module
 
 In this article I will describe how to round numbers using JavaScript and how to easily remember names of these functions.
 
@@ -15,6 +15,7 @@ Math is a global object that contains methods related to math. We will take a lo
 
 All these methods accept a number as an argument and return the nearest integer.
 
+### Math.ceil
 `Math.ceil()` — always rounds a number to larger integer value. Method name *ceil* is an abbreviation of the word  *ceiling —*  it is what above you if you in building :)
 
 Association: ceil = above, up;
@@ -26,6 +27,7 @@ Math.ceil(2.3); // Output: 3
 Math.ceil(2.7); // Output: 3
 ```
 
+### Math.floor
 `Math.floor()` — always rounds a number to nearest smaller integer value. It also English word that could be obvious for native speakers. It is the lower surface of a room, on which one may walk.
 
 Association: floor = down, lower, ground.
@@ -37,7 +39,7 @@ Math.floor(2.3); // Output: 2
 Math.floor(2.7); // Output: 2
 ```
 
-
+### Math.round
 `Math.round()` — rounds number to the closest number depending on fractional part. If fraction bigger or equal .5 it will rounds up. If fraction part is less it will rounds down.
 
 ```js
@@ -47,6 +49,7 @@ Math.round(2.3); // Output: 2
 Math.round(2.7); // Output: 3
 ```
 
+### Math.trunc
 `Math.trunc()` — just cuts off fraction part of number or *truncates*. For positive integers work the same way as floor but for negative behaviour is different
 
 ```js
@@ -58,8 +61,11 @@ Math.trunc(2.7); // Output: 2
 
 All these methods when called with anything, but a number or null as an argument, always return `NaN`
 
+### Interactive playground
 This is interactive form you could play with rounding numbers (don’t forget about negative numbers and invalid inputs)
 <math-round></math-round>
+
+### Conclusion
 Rounding numbers and dealing with numbers is very important part of any programming languages on any position and memorising this functions really speed up your growing as a developer.
 
 Hope article will be useful for you.

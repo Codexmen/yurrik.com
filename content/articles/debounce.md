@@ -26,7 +26,7 @@ The same demo but with debounced and throttled handlers.
 
 So, you basically  wrap your function to these functions (it will create a new function) and attach to event.
 
-### Debounce function
+## Debounce function
 
 We start from debounce. We will describe how it works, how to use it and how it could be implemented from scratch.
 
@@ -58,7 +58,7 @@ document.querySelector('#search-input').addEventListener('input', debouncedHandl
 
 Assume search field in e-commerce site. user start typing name of product and client should send a request to backend and get results. For search like “Iphone 13” without debounce we should send 13 request, get 13 responses and render UI 3 times in 1-2 seconds. With debounce we “wait” when user stop active typing and send request only one time.
 
-### Throttling function
+## Throttling function
 
 Throttling uses a different technique. It fires events no more than once in some time (as example 250ms). No matter how many events happened in this period if there was at least one it fires only one event. Throttling is like calling an elevator — no matter how many times you click button after first time the first event execute handler function and there should some time pass to countdown for next call.
 
@@ -79,13 +79,15 @@ document.querySelector('#refresh-button').addEventListener('click', throttledHan
 
 When we need to fire event when user continue producing it but with less speed. As example during scroll, resize events, some buttons click.
 
-### Conclusion
+## Conclusion
+
 
 - Debounce waits when sequence of events ends
 - Throttle filter out events if they are triggered oftener than need.
 - You could use [lodash](https://lodash.com/docs/4.17.15#debounce) or [underscore](https://underscorejs.org/#throttle) libraries implementation of these functions.
 
-### Resources
+## Resources
+
 
 - [Debouncing and Throttling Explained Through Examples](https://css-tricks.com/debouncing-throttling-explained-examples/)
 - [Throttling and Debouncing Events with Vue.js and lodash](https://www.digitalocean.com/community/tutorials/vuejs-lodash-throttle-debounce)
