@@ -25,7 +25,7 @@
     </v-app-bar>
 
     <v-main>
-      <v-container class="pt-12">
+      <v-container class="pt-6">
             <v-sheet
               min-height="80vh"
             >
@@ -33,7 +33,7 @@
             </v-sheet>
       </v-container>
     </v-main>
-    <v-footer class="justify-center secondary">© 2022 Yurii Kovalenko
+    <v-footer class="justify-center secondary mt-8">© 2022 Yurii Kovalenko
       <a class="mx-2" target="_blank" href="https://www.linkedin.com/in/yurii-kovalenko-00718a51/">LinkedIn</a>
       <a class="mx-2" target="_blank" href="https://twitter.com/CodexMen">Twitter</a>
       <a class="mx-2" target="_blank" href="https://github.com/Codexmen">GitHub</a></v-footer>
