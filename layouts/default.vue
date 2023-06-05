@@ -5,7 +5,7 @@
       color="secondary"
     >
       <v-container class="py-0 fill-height">
-        <NuxtLink to="/">
+        <NuxtLink class="font-weight-black text-decoration-none text-h6" to="/">
           Yurii Kovalenko
         </NuxtLink>
         <v-spacer></v-spacer>
@@ -26,11 +26,12 @@
 
     <v-main>
       <v-container class="pt-6">
-            <v-sheet
-              min-height="80vh"
-            >
-              <Nuxt/>
-            </v-sheet>
+        <v-row>
+          <v-col offset="2"  cols="8" >
+            <Nuxt/>
+          </v-col>
+
+        </v-row>
       </v-container>
     </v-main>
     <v-footer class="justify-center secondary mt-8">© 2022 Yurii Kovalenko

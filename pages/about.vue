@@ -5,5 +5,8 @@
 <script>
 export default {
   name: 'AboutPage',
+  head: {
+    title: 'About me'
+  }
 }
 </script>

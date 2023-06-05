@@ -3,7 +3,7 @@ import colors from 'vuetify/es5/util/colors'
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - kovalenko-blog',
+    titleTemplate: '%s | Kovalenko Yurii',
     title: 'kovalenko-blog',
     htmlAttrs: {
       lang: 'en'
@@ -52,21 +52,13 @@ export default {
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
+
     theme: {
       dark: false,
       themes: {
-        dark: {
-          primary: colors.blue.darken2,
-          accent: colors.grey.darken3,
-          secondary: colors.amber.darken3,
-          info: colors.teal.lighten1,
-          warning: colors.amber.base,
-          error: colors.deepOrange.accent4,
-          success: colors.green.accent3
-        },
         light: {
           primary: '#1d4b7c',
-          secondary: '#cef0ff',
+          secondary: '#edf7fd',
           accent: '#82B1FF',
           error: '#FF5252',
           info: '#2196F3',
@@ -74,7 +66,7 @@ export default {
           warning: '#FFC107',
         }
       }
-    }
+    },
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -88,4 +80,4 @@ export default {
       }
     }
   }
-}
+};

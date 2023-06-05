@@ -13,13 +13,15 @@
 <script>
 export default {
   name: 'BlogPage',
+    head: {
+      title: 'Recent posts'
+  },
   async asyncData({$content}) {
     const posts = await $content('articles')
       .only(['title', 'image', 'tags', 'slug','summary', 'time_created', 'length', 'createdAt'])
       .sortBy('createdAt', 'desc')
       .fetch()
 
-    console.log("posts", posts)
     return {
       posts,
     }

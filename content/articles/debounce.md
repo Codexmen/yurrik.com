@@ -1,5 +1,6 @@
 ---
 title: Debounce vs throttle in JavaScript
+description: What is deference between debounce and throttle functions? 
 summary: What is deference between debounce and throttle functions
 length: 4 minutes read
 ---
