@@ -1,6 +1,6 @@
 ---
 title: Rounding numbers with Math module
-description: Learning how to use @nuxt/content to create a blog
+description: How to round numbers with JavaScript Math module
 summary: In this article I will describe how to round numbers using JavaScript and how to easily remember names of these functions.
 length: 4 minutes read
 ---
