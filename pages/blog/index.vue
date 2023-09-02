@@ -1,7 +1,7 @@
 <template>
     <v-col class="text-center">
       <v-card v-for="post in posts" :key="post.slug"  class="text-left my-6">
-        <v-card-title><NuxtLink :to="'/blog/'+ post.slug">{{post.title}}</NuxtLink></v-card-title>
+        <v-card-title><NuxtLink class="text-h4 font-weight-bold text-decoration-none" :to="`/blog/${post.slug}`">{{post.title}}</NuxtLink></v-card-title>
         <v-card-subtitle v-if="post.length"><span class="primary--text">{{post.length}}</span></v-card-subtitle>
 
 

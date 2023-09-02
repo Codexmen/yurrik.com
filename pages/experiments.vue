@@ -1,5 +1,4 @@
 <template>
-  <ScrollExample />
 </template>
 
 <script>
