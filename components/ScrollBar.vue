@@ -25,5 +25,3 @@ export default {
   left: 0;
 }
 </style>
-<script setup>
-</script>
