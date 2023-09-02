@@ -1,6 +1,7 @@
 <template>
   <div>
-    <nuxt-content :document="article" />
+    <ScrollListener />
+    <NuxtContent :document="article" />
   </div>
 </template>
 

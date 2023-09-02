@@ -1,7 +1,8 @@
 <template>
   <v-app>
     <v-app-bar
-      app
+      class="flex-grow-0"
+      scroll-behavior="hide"
       color="secondary"
     >
       <v-container class="py-0 fill-height">
@@ -23,7 +24,7 @@
         </v-btn>
       </v-container>
     </v-app-bar>
-
+    <ScrollBar />
     <v-main>
       <v-container class="pt-6">
         <v-row>
