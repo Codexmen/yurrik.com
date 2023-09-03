@@ -3,9 +3,9 @@ title: Rounding numbers with Math module
 description: How to round numbers with JavaScript Math module
 summary: In this article I will describe how to round numbers using JavaScript and how to easily remember names of these functions.
 length: 4 minutes read
+date: 19-07-2022
+order: 2
 ---
-
-# Rounding numbers with Math module
 
 In this article I will describe how to round numbers using JavaScript and how to easily remember names of these functions.
 

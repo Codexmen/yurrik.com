@@ -1,13 +1,15 @@
 <template>
-    <v-col class="text-center">
-      <v-card v-for="post in posts" :key="post.slug"  class="text-left my-6">
-        <v-card-title><NuxtLink class="text-h4 font-weight-bold text-decoration-none" :to="`/blog/${post.slug}`">{{post.title}}</NuxtLink></v-card-title>
-        <v-card-subtitle v-if="post.length"><span class="primary--text">{{post.length}}</span></v-card-subtitle>
-
-
+    <div>
+      <h1 class="text-md-h2 text-h4 py-8">All posts</h1>
+      <v-card v-for="post in posts" :key="post.slug"  class="text-left mb-6">
+        <v-card-title class="pb-8"><NuxtLink class="text-md-h4 text-sm-h5 text-decoration-none" :to="`/blog/${post.slug}`">{{post.title}}</NuxtLink></v-card-title>
+        <v-card-subtitle v-if="post.length">
+          <span class="primary--text">{{post.length}}</span>
+          <span v-if="post.date" class="ml-8 text-caption">{{post.date}}</span>
+        </v-card-subtitle>
         <v-card-text class="text--primary">{{post.summary}}</v-card-text>
       </v-card>
-    </v-col>
+    </div>
 </template>
 
 <script>
@@ -18,8 +20,8 @@ export default {
   },
   async asyncData({$content}) {
     const posts = await $content('articles')
-      .only(['title', 'image', 'tags', 'slug','summary', 'time_created', 'length', 'createdAt'])
-      .sortBy('createdAt', 'asc')
+      .only(['title', 'image', 'tags', 'slug', 'summary', 'time_created', 'length', 'createdAt', 'order', 'date'])
+      .sortBy('order', 'desc')
       .fetch()
 
     return {

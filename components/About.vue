@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>About</h1>
+    <h1 class="text-md-h2 text-h4 py-8">About me</h1>
     <p>Hey there! My name is Yurii Kovalenko. I am a frontend developer since 2010 from Melitopol, Ukraine.</p>
     <h3>Background</h3>
     <p>First steps in development I made in school. From that time it is my hobby and full-time  job.

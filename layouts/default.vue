@@ -6,6 +6,8 @@
       color="secondary"
     >
       <v-container class="py-0 fill-height">
+        <v-col offset-md="2"  offset-sm="0"  md="8" sm="12" >
+          <v-row>
         <NuxtLink class="font-weight-black text-decoration-none text-h6" to="/">
           Yurii Kovalenko
         </NuxtLink>
@@ -22,13 +24,15 @@
         >
           {{ link.title }}
         </v-btn>
+            </v-row>
+        </v-col>
       </v-container>
     </v-app-bar>
     <ScrollBar />
     <v-main>
-      <v-container class="pt-6">
+      <v-container>
         <v-row>
-          <v-col offset="2"  cols="8" >
+          <v-col offset-md="2"  offset-sm="0"  md="8" sm="12" >
             <Nuxt/>
           </v-col>
 
