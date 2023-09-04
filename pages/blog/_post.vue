@@ -1,6 +1,7 @@
 <template>
   <div>
     <ScrollListener />
+    <h1 class="text-md-h2 text-h4 py-8">{{ article.title }}</h1>
     <NuxtContent :document="article" />
   </div>
 </template>
