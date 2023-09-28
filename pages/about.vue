@@ -2,11 +2,8 @@
     <About />
 </template>
 
-<script>
-export default {
-  name: 'AboutPage',
-  head: {
-    title: 'About me'
-  }
-}
+<script setup>
+definePageMeta({
+  title: 'About me'
+})
 </script>

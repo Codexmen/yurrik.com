@@ -3,25 +3,20 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
-  },
-  "dependencies": {
-    "@nuxt/content": "^1.15.1",
-    "@nuxtjs/gtm": "^2.4.0",
-    "core-js": "^3.19.3",
-    "lodash": "^4.17.21",
-    "nuxt": "^2.15.8",
-    "prism-themes": "^1.9.0",
-    "vue": "^2.6.14",
-    "vue-server-renderer": "^2.6.14",
-    "vue-template-compiler": "^2.6.14",
-    "vuetify": "^2.6.1",
-    "webpack": "^4.46.0"
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@nuxtjs/vuetify": "^1.12.3"
+    "@invictus.codes/nuxt-vuetify": "^0.3.0",
+    "@nuxt/devtools": "^0.8.5",
+    "nuxt": "^3.7.4"
+  },
+  "dependencies": {
+    "@nuxt/content": "^2.8.4",
+    "@nuxtjs/gtm": "^2.4.0",
+    "sass": "^1.68.0"
   }
 }

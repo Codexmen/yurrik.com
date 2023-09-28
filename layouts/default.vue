@@ -1,3 +1,10 @@
+<script setup>
+const route = useRoute()
+
+useHead({
+  title: route.meta.title,
+})
+</script>
 <template>
   <v-app>
     <v-app-bar
@@ -33,13 +40,13 @@
       <v-container>
         <v-row>
           <v-col offset-md="2"  offset-sm="0"  md="8" sm="12" >
-            <Nuxt/>
+            <slot />
           </v-col>
 
         </v-row>
       </v-container>
     </v-main>
-    <v-footer class="justify-center secondary mt-8">© 2022 Yurii Kovalenko
+    <v-footer class="justify-center bg-secondary mt-8">© 2022 Yurii Kovalenko
       <a class="mx-2" target="_blank" href="https://www.linkedin.com/in/yurii-kovalenko-00718a51/">LinkedIn</a>
       <a class="mx-2" target="_blank" href="https://twitter.com/CodexMen">Twitter</a>
       <a class="mx-2" target="_blank" href="https://github.com/Codexmen">GitHub</a></v-footer>
