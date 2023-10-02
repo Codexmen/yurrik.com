@@ -16,25 +16,13 @@
 </template>
 
 <script setup>
-definePageMeta({
-   title: 'Recent posts'
+useSeoMeta({
+  title: 'Recent posts'
 })
-const {data: posts} = await useAsyncData('posts-list', () => queryContent().only(['title', 'image', 'tags', '_path', 'summary', 'time_created', 'length', 'createdAt', 'order', 'date'])
-    .sort({'order': -1}).find())
-// export default {
-//   name: 'BlogPage',
-//     head: {
-//       title: 'Recent posts'
-//   },
-//   async asyncData({$content}) {
-//     const posts = await $content('articles')
-//       .only(['title', 'image', 'tags', 'slug', 'summary', 'time_created', 'length', 'createdAt', 'order', 'date'])
-//       .sortBy('order', 'desc')
-//       .fetch()
-//
-//     return {
-//       posts,
-//     }
-//   },
-// }
+const {data: posts} = await useAsyncData('posts-list',
+    () => queryContent()
+        .only(['title', 'image', 'tags', '_path', 'summary', 'time_created', 'length', 'createdAt', 'order', 'date'])
+        .sort({'order': -1})
+        .find()
+)
 </script>

@@ -1,6 +1,6 @@
 <template>
   <div class="d-flex py-8">
-    <div @mousemove="onMouseMove" @scroll="onScroll" class="scroll-area pa-2 blue lighten-3 flex-grow-1">
+    <div @mousemove="onMouseMove" @scroll="onScroll" class="scroll-area pa-2 bg-blue lighten-3 flex-grow-1">
       <div style="height: 2000px">
         <div class="text-h4" style="position: sticky; top: 0;">Scroll here</div>
       </div>
@@ -18,7 +18,6 @@ import throttle from 'lodash/throttle'
 import debounce from 'lodash/debounce'
 
 export default {
-  name: "ScrollExample",
   data() {
     return {
       scrollEvents: 0,

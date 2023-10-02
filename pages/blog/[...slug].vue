@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ScrollListener/>
+    <ScrollListener />
     <ContentDoc v-slot="{ doc }">
       <article>
         <h1 class="text-md-h2 text-h4 py-8">{{ doc.title }}</h1>
@@ -9,7 +9,3 @@
     </ContentDoc>
   </div>
 </template>
-
-<script setup>
-const route = useRoute()
-</script>

@@ -15,7 +15,7 @@ Sometimes we attach to event a heavy function that do too much, and it affects u
 
 Here is interactive demo where you could see how many scroll events fires in browser.
 
-<scroll-example></scroll-example>
+:scroll-example
 
 As frontend developers we have two tools to reduce calls to heavy functions: debounce and throttle.
 
@@ -23,7 +23,7 @@ What they both do — they reduce calls to our event handler (they just skip cal
 
 The same demo but with debounced and throttled handlers.
 
-<scroll-example with-reduce-methods ></scroll-example>
+:scroll-example{with-reduce-methods}
 
 So, you basically  wrap your function to these functions (it will create a new function) and attach to event.
 

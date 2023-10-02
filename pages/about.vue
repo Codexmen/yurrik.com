@@ -3,7 +3,7 @@
 </template>
 
 <script setup>
-definePageMeta({
+useSeoMeta({
   title: 'About me'
 })
 </script>
