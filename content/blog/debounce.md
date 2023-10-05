@@ -4,7 +4,14 @@ description: What is deference between debounce and throttle functions?
 summary: What is deference between debounce and throttle functions
 length: 4 minutes read
 date: 07-08-2022
+author: Yurii Kovalenko
 order: 1
+head:
+  meta:
+    - name: 'author'
+      content: 'Yurii Kovalenko'
+    - name: 'keywords'
+      content: 'javascript, debounce, throttle, lodash, debounce user input, throttle user input, debounce vs throttle javascript, debounce vs throttle difference'
 ---
 
 A few days ago I had to fix defect that creates a big performance issue for our DB — our users just spam with clicks our “Refresh” button that requests new information from server. My question was like “What I should do? Debounce or throttle this clicks?”. In this article I would like to describe these techniques and differences between them.

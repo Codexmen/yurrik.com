@@ -17,7 +17,9 @@
 
 <script setup>
 useSeoMeta({
-  title: 'Recent posts'
+  title: 'Recent posts',
+  description: 'Recent posts of Yurii Kovalenko blog',
+  keywords: 'blog posts, javascript, vue, nuxt',
 })
 const {data: posts} = await useAsyncData('posts-list',
     () => queryContent()
