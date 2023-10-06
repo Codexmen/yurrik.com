@@ -1,83 +1,86 @@
-import colors from 'vuetify/es5/util/colors'
+export default defineNuxtConfig({
+    app: {
+        // htmlAttrs: {
+        //   lang: 'en'
+        // },
+        head: {
+            title: 'kovalenko-blog',
+            titleTemplate: '%s | Kovalenko Yurii',
+        },
 
-export default {
-  // Global page headers: https://go.nuxtjs.dev/config-head
-  head: {
-    titleTemplate: '%s | Kovalenko Yurii',
-    title: 'kovalenko-blog',
-    htmlAttrs: {
-      lang: 'en'
+        // { charset: 'utf-8' },
+        // { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        // { hid: 'description', name: 'description', content: '' },
+        // { name: 'format-detection', content: 'telephone=no' }
+        // link: [
+        //   { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+        // ]
     },
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+
+    // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
+    // plugins: [
+    // ],
+    //
+    // // Auto import components: https://go.nuxtjs.dev/config-components
+    // components: true,
+    css: ['~/assets/css/main.css'],
+
+    // Modules: https://go.nuxtjs.dev/config-modules
+    modules: [
+        '@nuxt/content',
+        // '@nuxtjs/gtm',
+        '@invictus.codes/nuxt-vuetify',
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
-  },
 
-  // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-    '~/assets/css/index.scss'
-  ],
-
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-  ],
-
-  // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
-
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-    // https://go.nuxtjs.dev/vuetify
-    '@nuxtjs/vuetify',
-  ],
-
-  // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-    '@nuxt/content',
-    '@nuxtjs/gtm'
-  ],
-
-  publicRuntimeConfig: {
-    gtm: {
-      id: process.env.GOOGLE_TAG_MANAGER_ID
-    }
-  },
-
-  // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
-  vuetify: {
-    customVariables: ['~/assets/variables.scss'],
-
-    theme: {
-      dark: false,
-      themes: {
-        light: {
-          primary: '#1d4b7c',
-          secondary: '#edf7fd',
-          accent: '#82B1FF',
-          error: '#FF5252',
-          info: '#2196F3',
-          success: '#4CAF50',
-          warning: '#FFC107',
-        }
-      }
+    // publicRuntimeConfig: {
+    //   gtm: {
+    //     id: process.env.GOOGLE_TAG_MANAGER_ID
+    //   }
+    // },
+    vuetify: {
+        vuetifyOptions: {
+            theme: {
+                defaultTheme: 'light',
+                themes: {
+                    light: {
+                        colors: {
+                            primary: '#1d4b7c',
+                            secondary: '#edf7fd',
+                            accent: '#82B1FF',
+                            error: '#FF5252',
+                            info: '#2196F3',
+                            success: '#4CAF50',
+                            warning: '#FFC107',
+                        }
+                    }
+                }
+            }
+        },
     },
-  },
+    content: {
+        markdown: {
+            anchorLinks: false,
+        },
+        highlight: {
+            // Theme used in all color schemes.
+            theme: 'github-dark',
+        }
+    },
+//     moduleOptions: {
+//         treeshaking: true,
+//     }
+// }
 
-  // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-  },
-  target: 'static',
-  content: {
-    markdown: {
-      prism: {
-        theme: 'prism-themes/themes/prism-cb.css'
-      }
-    }
-  }
-};
+// // Build Configuration: https://go.nuxtjs.dev/config-build
+// build: {
+// },
+// target: 'static',
+// content: {
+//   markdown: {
+//     prism: {
+//       theme: 'prism-themes/themes/prism-cb.css'
+//     }
+//   }
+// }
+})
+;

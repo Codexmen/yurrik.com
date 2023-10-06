@@ -4,7 +4,15 @@ description: Implementation of page scroll progress bar using Vue.js
 summary: In this article, I will describe how to implement a page scroll indicator. This feature is seen on many blogs and is easy to implement, adding more interactivity to the blog.
 length: 5 minutes read
 date: 01-09-2023
+author: Yurii Kovalenko
 order: 3
+head:
+  meta:
+    - name: 'author'
+      content: 'Yurii Kovalenko'
+    - name: 'keywords'
+      content: 'javascript, scroll, vue, progress bar, page scroll progress bar, page scroll progress indicator'
+
 ---
 In this article, I will describe how to implement a page scroll indicator. This feature is seen on many blogs and is easy to implement, adding more interactivity to the blog.
 

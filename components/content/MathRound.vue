@@ -5,13 +5,13 @@
     <div class="text-center">&harr;</div>
     <code class="text-center">Math.round</code>
   </div>
-    <div class="row justify-center align-center ma-4">
+    <div class="d-flex justify-center align-center ma-4">
       <div class="mr-4">{{  floored }}</div>
       <div class="column">
         <div>&larr;&minus;&infin;</div>
         <code>Math.floor</code>
       </div>
-      <div class="mx-4"><v-text-field v-model="model" /></div>
+      <div class="mx-4 flex-grow-1"><v-text-field v-model="model" /></div>
       <div class="column">
         <div>&rarr;&infin;</div>
         <code>Math.ceil</code>
@@ -49,7 +49,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-
-</style>

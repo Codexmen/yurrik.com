@@ -3,6 +3,13 @@ title: Rounding numbers with Math module
 description: How to round numbers with JavaScript Math module
 summary: In this article I will describe how to round numbers using JavaScript and how to easily remember names of these functions.
 length: 4 minutes read
+author: Yurii Kovalenko
+head:
+  meta:
+    - name: 'author'
+      content: 'Yurii Kovalenko'
+    - name: 'keywords'
+      content: 'javascript, math, round, ceil, floor, trunc, round numbers'
 date: 19-07-2022
 order: 2
 ---
@@ -63,7 +70,8 @@ All these methods when called with anything, but a number or null as an argument
 
 ### Interactive playground
 This is interactive form you could play with rounding numbers (don’t forget about negative numbers and invalid inputs)
-<math-round></math-round>
+
+:math-round
 
 ### Conclusion
 Rounding numbers and dealing with numbers is very important part of any programming languages on any position and memorising this functions really speed up your growing as a developer.

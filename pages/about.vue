@@ -2,11 +2,10 @@
     <About />
 </template>
 
-<script>
-export default {
-  name: 'AboutPage',
-  head: {
-    title: 'About me'
-  }
-}
+<script setup>
+useSeoMeta({
+  title: 'About me',
+  description: 'About me',
+  keywords: 'about, me, Yurii Kovalenko',
+})
 </script>

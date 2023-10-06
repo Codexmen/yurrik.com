@@ -4,7 +4,14 @@ description: What is deference between debounce and throttle functions?
 summary: What is deference between debounce and throttle functions
 length: 4 minutes read
 date: 07-08-2022
+author: Yurii Kovalenko
 order: 1
+head:
+  meta:
+    - name: 'author'
+      content: 'Yurii Kovalenko'
+    - name: 'keywords'
+      content: 'javascript, debounce, throttle, lodash, debounce user input, throttle user input, debounce vs throttle javascript, debounce vs throttle difference'
 ---
 
 A few days ago I had to fix defect that creates a big performance issue for our DB — our users just spam with clicks our “Refresh” button that requests new information from server. My question was like “What I should do? Debounce or throttle this clicks?”. In this article I would like to describe these techniques and differences between them.
@@ -15,7 +22,7 @@ Sometimes we attach to event a heavy function that do too much, and it affects u
 
 Here is interactive demo where you could see how many scroll events fires in browser.
 
-<scroll-example></scroll-example>
+:scroll-example
 
 As frontend developers we have two tools to reduce calls to heavy functions: debounce and throttle.
 
@@ -23,7 +30,7 @@ What they both do — they reduce calls to our event handler (they just skip cal
 
 The same demo but with debounced and throttled handlers.
 
-<scroll-example with-reduce-methods ></scroll-example>
+:scroll-example{with-reduce-methods}
 
 So, you basically  wrap your function to these functions (it will create a new function) and attach to event.
 
