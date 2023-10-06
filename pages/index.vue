@@ -3,7 +3,9 @@
 </template>
 
 <script setup>
-definePageMeta({
-  title: 'About me'
+useSeoMeta({
+  title: 'Kovalenko Yurii',
+  description: 'Index page of my personal site and blog',
+  keywords: 'about, Yurii Kovalenko, blog, personal site',
 })
 </script>
