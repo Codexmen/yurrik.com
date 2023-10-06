@@ -11,35 +11,36 @@ const navigation = [
 </script>
 <template>
   <v-app>
-    <v-app-bar
-        class="flex-grow-0"
-        scroll-behavior="hide"
-        scroll-threshold="50"
-        color="secondary"
+    <v-row
+        class="bg-secondary mt-0"
+        style="height: 64px;"
     >
-      <v-container class="py-0 fill-height">
+      <v-container>
         <v-col offset-md="2" offset-sm="0" md="8" sm="12">
           <v-row>
-            <NuxtLink class="font-weight-black text-decoration-none text-h6" to="/">
-              Yurii Kovalenko
-            </NuxtLink>
+            <v-hover v-slot="{ isHovering, props }">
+              <NuxtLink v-bind="props" :class="isHovering ? 'text-decoration-underline': ''"
+                        class="font-weight-black text-decoration-none text-h6" to="/">
+                Yurii Kovalenko
+              </NuxtLink>
+            </v-hover>
             <v-spacer></v-spacer>
-            <v-btn
-                v-for="link in navigation"
-                :key="link.to"
-                text
-                color="primary"
-                class="mr-2"
-                :to="link.to"
-                router
-                exact
-            >
-              {{ link.title }}
-            </v-btn>
+
+            <v-hover v-slot="{ isHovering, props }" v-for="link in navigation" :key="link.to">
+              <NuxtLink
+                  v-bind="props"
+                  class="text-primary navigation-link mx-2 text-decoration-none"
+                  active-class="text-decoration-underline"
+                  :class="isHovering ? 'text-decoration-underline': ''"
+                  :to="link.to"
+              >
+                {{ link.title }}
+              </NuxtLink>
+            </v-hover>
           </v-row>
         </v-col>
       </v-container>
-    </v-app-bar>
+    </v-row>
     <ScrollBar/>
     <v-main>
       <v-container>
