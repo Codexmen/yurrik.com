@@ -40,12 +40,10 @@ export default {
 </script>
 <style scoped>
 .progress-container {
-  z-index: 1;
   position: fixed;
   top: 0;
   width: 100%;
   height: 4px;
-  background-color: transparent;
 }
 #progress-bar {
   position: absolute;
