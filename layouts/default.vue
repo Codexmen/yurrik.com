@@ -16,7 +16,7 @@ const navigation = [
         style="height: 64px;"
     >
       <v-container>
-        <v-col offset-md="2" offset-sm="0" md="8" sm="12">
+        <v-col  offset-sm="0" md="12" sm="12">
           <v-row>
             <v-hover v-slot="{ isHovering, props }">
               <NuxtLink v-bind="props" :class="isHovering ? 'text-decoration-underline': ''"
@@ -45,7 +45,7 @@ const navigation = [
     <v-main>
       <v-container>
         <v-row>
-          <v-col offset-md="2" offset-sm="0" md="8" sm="12">
+          <v-col offset-sm="0" md="12" sm="12">
             <slot/>
           </v-col>
 

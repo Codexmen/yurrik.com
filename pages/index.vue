@@ -1,5 +1,6 @@
 <template>
-  <About />
+  <HeroSection class="mb-8" />
+  <RecentPosts />
 </template>
 
 <script setup>
