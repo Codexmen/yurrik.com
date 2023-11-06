@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <v-col offset-md="2" offset-sm="0" md="8" sm="12">
     <ScrollListener/>
     <ContentDoc v-slot="{ doc }">
       <article>
@@ -11,5 +11,5 @@
         <ContentRenderer :value="doc"/>
       </article>
     </ContentDoc>
-  </div>
+  </v-col>
 </template>
