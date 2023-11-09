@@ -12,7 +12,7 @@ const {data: posts} = await usePosts();
 
 <template>
   <v-col offset-md="2" offset-sm="0" md="8" sm="12">
-    <h1 class="text-md-h2 text-h4 py-8">All posts</h1>
+    <PageTitle title="All posts"/>
     <div v-for="post in posts" :key="post.slug">
       <PostListItem :title="post.title"
                     :length="post.length"

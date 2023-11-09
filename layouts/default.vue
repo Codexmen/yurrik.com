@@ -54,7 +54,9 @@ const navigation = [
     </v-main>
     <v-footer class="justify-center bg-secondary mt-8">© 2022 Yurii Kovalenko
       <a class="mx-2" target="_blank" href="https://www.linkedin.com/in/yurii-kovalenko-00718a51/">LinkedIn</a>
+      <a class="mx-2" href="mailto:kimongod@gmail.com">Email</a>
       <a class="mx-2" target="_blank" href="https://twitter.com/CodexMen">Twitter</a>
-      <a class="mx-2" target="_blank" href="https://github.com/Codexmen">GitHub</a></v-footer>
+      <a class="mx-2" target="_blank" href="https://github.com/Codexmen">GitHub</a>
+    </v-footer>
   </v-app>
 </template>
