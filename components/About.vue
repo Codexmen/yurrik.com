@@ -1,22 +1,26 @@
 <template>
-  <div>
-    <h1 class="text-md-h2 text-h4 py-8">About me</h1>
-    <p>Hey there! My name is Yurii Kovalenko. I am a frontend developer since 2010 from Melitopol, Ukraine.</p>
-    <h3>Background</h3>
-    <p>First steps in development I made in school. From that time it is my hobby and full-time  job.
+  <PageTitle title="About me"/>
+  <p>Hey there! I&#x27;m Yurii Kovalenko, a frontend developer since
+    2010 originally from Melitopol, Ukraine🇺🇦. Presently, I&#x27;m residing in Poland 🇵🇱 due to the Russian-Ukrainian
+    war.</p>
+  <p>There I try to enhance my writing skills and share my
+    experiences.</p>
+  <h3>Background</h3>
+  <p>My journey in development began during my school days, evolving
+    from a hobby into my full-time profession. I embarked on my career as a full stack developer using PHP, spending
+    several years developing numerous portals and e-commerce platforms.</p>
+  <p>Transitioning to a more Frontend-focused role, I&#x27;ve spent
+    the last decade primarily immersed in JavaScript and popular frameworks like React and Vue. Throughout my journey, I&#x27;ve
+    encountered numerous frameworks and libraries, some of which have faded from memory, such as JQuery, Backbone, and
+    Angular 1+.</p>
+  <p>I&#x27;ve had the opportunity to step into leadership roles a
+    few times, and I&#x27;m currently expanding my skill set by delving into Python and various data-related topics.
+    This venture also serves as a platform for me to enhance my writing skills and share my experiences.</p>
+  <p>A dedicated enthusiast for learning, I&#x27;m constantly seeking
+    new experiences and knowledge. Beyond the tech realm, I indulge in various hobbies such as snowboarding, sailing,
+    music, traveling, cooking, and more.</p>
 
-      I started my career as a full stack developer on PHP and it finished by creating in-house CMS on YIi.</p>
-    <p>After that I changed my job and focused mostly on frontend. There is a lot of frameworks and libraries that I already forgot like JQuery, Backbone, Angular 1+. </p>
-    <p>Last years I am working with  React and Vue.</p>
-    <p>A few times was promoted to lead position.</p>
-    <p>Learning  Python and Data related topics.</p>
-    <p>Big fan of learning and curious to new experience and knowledge.</p>
-    <p>I have a lot of hobbies not related to tech like snowboarding, sailing, music, traweling, cooking and more others.</p>
-  <h3>Keep in touch</h3>
-    <ul>
-      <li><a target="_blank" href="https://www.linkedin.com/in/yurii-kovalenko-00718a51/">LinkedIn</a></li>
-      <li><a target="_blank" href="https://twitter.com/CodexMen">Twitter</a></li>
-      <li><a target="_blank" href="https://github.com/Codexmen">GitHub</a></li>
-    </ul>
-  </div>
+  <p>My employment history you could find <a href="/timeline">there</a>.</p>
+  <p>If you would like to contact me please write to <a
+      href="mailto:kimongod@gmail.com">kimongod@gmail.com</a></p>
 </template>

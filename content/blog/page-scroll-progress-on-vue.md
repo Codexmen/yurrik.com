@@ -77,8 +77,8 @@ mounted() {
       // subscribe to scroll event
       document.addEventListener('scroll', this.scrollHandler, {passive: true});
 },
-beforeDestroy() {
-      // remove listener when we destroy component
+unmounted() {
+      // remove listener when we unmount component
       document.removeEventListener('scroll', this.scrollHandler);
 },
 methods: {
