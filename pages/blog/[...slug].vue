@@ -1,5 +1,5 @@
 <template>
-  <v-col offset-md="2" offset-sm="0" md="8" sm="12">
+  <BaseNarrowPage>
     <ScrollListener/>
     <ContentDoc v-slot="{ doc }">
       <article>
@@ -11,5 +11,5 @@
         <ContentRenderer :value="doc"/>
       </article>
     </ContentDoc>
-  </v-col>
+  </BaseNarrowPage>
 </template>
