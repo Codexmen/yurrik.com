@@ -11,13 +11,11 @@
         <v-btn color="secondary" large>Posts</v-btn>
       </NuxtLink>
     </v-col>
-    <v-col cols="12" md="5" class="d-flex flex-row-reverse">
+    <v-col cols="12" md="5" class="d-none d-md-flex justify-end">
       <v-img
           lazy-src="/photo_small.jpeg"
           max-width="400"
           max-height="400"
-          width="400"
-          height="400"
           alt="Yurii Kovalenko photo"
           src="/photo.jpeg"
           contain
