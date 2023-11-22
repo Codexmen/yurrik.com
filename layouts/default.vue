@@ -12,35 +12,38 @@ const navigation = [
 <template>
   <v-app>
     <div
-        class="bg-secondary mt-0 w-full d-flex align-center justify-center px-8"
+        class="bg-secondary"
         style="height: 64px;"
     >
-        <v-hover v-slot="{ isHovering, props }">
-          <NuxtLink v-bind="props" :class="isHovering ? 'text-decoration-underline': ''"
-                    class="me-auto font-weight-black text-decoration-none text-h6" to="/">
-            Yurii Kovalenko
-          </NuxtLink>
-        </v-hover>
-        <v-hover v-slot="{ isHovering, props }" v-for="link in navigation" :key="link.to">
-          <NuxtLink
-              v-bind="props"
-              class="text-primary navigation-link mx-2 text-decoration-none"
-              active-class="text-decoration-underline"
-              :class="isHovering ? 'text-decoration-underline': ''"
-              :to="link.to"
-          >
-            {{ link.title }}
-          </NuxtLink>
-        </v-hover>
+      <div class="v-container">
+        <v-row>
+          <v-col class="d-flex">
+            <v-hover v-slot="{ isHovering, props }">
+              <NuxtLink v-bind="props" :class="isHovering ? 'text-decoration-underline': ''"
+                        class="d-block mr-auto font-weight-black text-decoration-none text-h6" to="/">
+                Yurii Kovalenko
+              </NuxtLink>
+            </v-hover>
+            <v-hover v-slot="{ isHovering, props }" v-for="link in navigation" :key="link.to">
+              <NuxtLink
+                  v-bind="props"
+                  class="text-primary navigation-link mx-2 text-decoration-none"
+                  active-class="text-decoration-underline"
+                  :class="isHovering ? 'text-decoration-underline': ''"
+                  :to="link.to"
+              >
+                {{ link.title }}
+              </NuxtLink>
+            </v-hover>
+          </v-col>
+        </v-row>
+      </div>
     </div>
     <ScrollBar/>
     <v-main>
       <v-container>
         <v-row>
-          <v-col offset-sm="0" md="12" sm="12">
-            <slot/>
-          </v-col>
-
+          <slot/>
         </v-row>
       </v-container>
     </v-main>

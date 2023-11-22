@@ -12,7 +12,7 @@ const {data: posts} = await usePosts();
 </script>
 
 <template>
-  <v-container>
+  <div>
     <div class="text-h4 mb-8"> Recent posts:</div>
     <v-row>
       <v-col md="6" cols="12" v-for="post in posts" :key="post.slug">
@@ -23,5 +23,5 @@ const {data: posts} = await usePosts();
                       :path="post._path"/>
       </v-col>
     </v-row>
-  </v-container>
+  </div>
 </template>
