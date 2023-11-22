@@ -1,6 +1,8 @@
 <template>
-  <HeroSection class="mb-8" />
-  <RecentPosts />
+  <v-col>
+    <HeroSection class="mb-8"/>
+    <RecentPosts/>
+  </v-col>
 </template>
 
 <script setup>

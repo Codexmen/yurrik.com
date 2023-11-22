@@ -10,7 +10,7 @@ const expInYears = (startDate, endDate) => {
 </script>
 
 <template>
-  <div>
+  <BaseNarrowPage>
     <PageTitle title="Employment History"/>
     <v-timeline side="end">
       <v-timeline-item
@@ -42,7 +42,7 @@ const expInYears = (startDate, endDate) => {
         </div>
       </v-timeline-item>
     </v-timeline>
-  </div>
+  </BaseNarrowPage>
 </template>
 
 <style scoped>

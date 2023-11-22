@@ -30,21 +30,16 @@ const props = defineProps({
               class="text-left mb-6"
               :class="isHovering ? 'bg-secondary': ''"
       >
-        <v-card-title class="pb-8">
-          <span class="text-md-h4 text-sm-h5">{{ props.title }}</span>
-        </v-card-title>
+        <div class="pb-md-4 pb-2 pa-4">
+          <span class="text-md-h4 text-h5">{{ props.title }}</span>
+        </div>
         <v-card-subtitle v-if="props.length || props.date">
           <span v-if="props.length" class="primary--text">{{ props.length }}</span>
           <span v-if="props.date" class="ml-8 text-caption">{{ props.date }}</span>
         </v-card-subtitle>
-        <v-card-text class="text--primary post-description">{{ props.summary }}</v-card-text>
+        <v-card-text class="text--primary">{{ props.summary }}</v-card-text>
       </v-card>
 
     </NuxtLink>
   </v-hover>
 </template>
-<style scoped>
-  .post-description {
-    height: 95px
-  }
-</style>

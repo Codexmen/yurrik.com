@@ -1,17 +1,30 @@
+@font-face {
+    font-family: 'Monserat Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+
+
 html {
     font-size: 16px;
 }
+
 body {
-  font-size: 20px;
-  line-height: 1.5;
-  color: #334155
+    font-size: 20px;
+    font-family: 'Monserat Regular', sans-serif;
+    line-height: 1.5;
+    color: #334155
 }
+
 .v-application ol, .v-application ul {
     padding-left: 18px;
 }
+
 p, ul {
-     margin-bottom: 1rem;
- }
+    margin-bottom: 1rem;
+}
 
 pre {
     margin: 24px 0;
@@ -19,7 +32,7 @@ pre {
     padding: 16px;
 }
 
-h2,h3 {
+h2, h3 {
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
