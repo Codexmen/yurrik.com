@@ -8,8 +8,6 @@ useSeoMeta({
 })
 const {data: posts} = await usePosts();
 </script>
-
-
 <template>
   <BaseNarrowPage>
     <PageTitle title="All posts"/>
