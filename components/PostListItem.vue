@@ -37,7 +37,7 @@ const props = defineProps({
           <span v-if="props.length" class="primary--text">{{ props.length }}</span>
           <span v-if="props.date" class="ml-8 text-caption">{{ props.date }}</span>
         </v-card-subtitle>
-        <v-card-text class="text--primary">{{ props.summary }}</v-card-text>
+        <v-card-text :style="{'min-height': '100px'}" class="text--primary">{{ props.summary }}</v-card-text>
       </v-card>
 
     </NuxtLink>
