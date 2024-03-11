@@ -8,7 +8,7 @@ const props = defineProps({
   },
 })
 
-const {data: posts} = await usePosts();
+const {data: posts} = await usePosts(props.limit);
 </script>
 
 <template>

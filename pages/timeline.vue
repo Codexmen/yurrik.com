@@ -12,36 +12,38 @@ const expInYears = (startDate, endDate) => {
 <template>
   <BaseNarrowPage>
     <PageTitle title="Employment History"/>
-    <v-timeline side="end">
-      <v-timeline-item
-          hide-opposite
+    <div>
+      <v-timeline side="end">
+        <v-timeline-item
+          hide-opposite="true"
           v-for="time in timeline"
           :key="time.name"
           width="90%"
           size="small"
-      >
-        <div class="text-2xl font-weight-bold">
-          {{ time.name }}
-        </div>
-        <div class="text-caption">
-          {{ time.startDate }} - {{ time.endDate || 'Now' }} ({{ expInYears(time.startDate, time.endDate) }}+ years)
-        </div>
-        <div class="text-body">
-          {{ time.position }}
-        </div>
-        <ul v-if="time.responsibilities">
-          <li class="text-body-2" v-for="item in time.responsibilities">{{ item }}</li>
+        >
+          <div class="text-2xl font-weight-bold">
+            {{ time.name }}
+          </div>
+          <div class="text-caption">
+            {{ time.startDate }} - {{ time.endDate || 'Now' }} ({{ expInYears(time.startDate, time.endDate) }}+ years)
+          </div>
+          <div class="text-body">
+            {{ time.position }}
+          </div>
+          <ul v-if="time.responsibilities">
+            <li class="text-body-2" v-for="item in time.responsibilities">{{ item }}</li>
 
-        </ul>
-        <div  class="text-body-2" v-if="time.stack">
-          <span>Stack: </span>
-          <v-chip-group>
-            <v-chip v-for="item in time.stack">{{ item }}</v-chip>
-          </v-chip-group>
+          </ul>
+          <div class="text-body-2" v-if="time.stack">
+            <span>Stack: </span>
+            <v-chip-group>
+              <v-chip v-for="item in time.stack">{{ item }}</v-chip>
+            </v-chip-group>
 
-        </div>
-      </v-timeline-item>
-    </v-timeline>
+          </div>
+        </v-timeline-item>
+      </v-timeline>
+    </div>
   </BaseNarrowPage>
 </template>
 
