@@ -13,7 +13,6 @@ head:
     - name: 'keywords'
       content: 'javascript, trees, graph, nested data structures, react, react components, react tree, react nested tree, react nested menu'
 ---
-# 
 
 A tree structure is a widely used data structure in Javascript, particularly in browsers. It can be described succinctly. The main character here is a type `Node` that can contain some data and can also contain children of the same type - `Node`. So, it is a nested data structure that starts from a root node and contains nested nodes with varying levels of depth.
 
@@ -156,7 +155,7 @@ export default function NestedMenu() {
 }
 ```
 
-The output of  `NestedMenu` render will looks next way:
+The output of  `NestedMenu` render will look next way:
 
 <img src="/blog/trees-1.png" alt="Nested menu" style="width: 100%;">
 If you would like to practice on it and get your hands dirty, I have a few ideas for us:
