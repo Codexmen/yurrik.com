@@ -3,6 +3,12 @@ export default defineNuxtConfig({
         head: {
             title: 'kovalenko-blog',
             titleTemplate: '%s | Kovalenko Yurii',
+            htmlAttrs: {
+                lang: 'en'
+            },
+          link: [
+              { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+          ],
         },
     },
     css: ['~/assets/css/main.css'],

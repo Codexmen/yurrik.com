@@ -120,11 +120,11 @@ getScrollPercent() {
 
 I split this logic into two elements because the progress bar typically exists at a high level in the layout, along with the header or footer. However, I only need the scroll listening logic on blog pages. So I put the second component into the blog post layout component and it updates the progress bar only on those pages. It does not update on long pages where it should not (such as the post list, for example).
 
-A few words about performance. First, we should use the `{passive: true}` argument for the scroll listener. This indicates to the browser that we will not prevent scrolling and it should not wait for the listener to execute before scrolling. You can find more information about it [here](https://developer.chrome.com/docs/lighthouse/best-practices/uses-passive-event-listeners/).
+A few words about performance. First, we should use the `{passive: true}` argument for the scroll listener. This indicates to the browser that we will not prevent scrolling and it should not wait for the listener to execute before scrolling. You can find more information about it [here](https://developer.chrome.com/docs/lighthouse/best-practices/uses-passive-event-listeners/){target="_blank"}.
 
 We could also throttle the scroll function and calculate the scroll position not for each event. I wrote about throttling methods [before](http://localhost:3000/blog/debounce).
 
 Alternatively, you could use requestAnimationFrame for better performance. You can find an example [here](https://developer.mozilla.org/en-US/docs/Web/API/Document/scroll_event#scroll_event_throttling).
 
 Here you could find full implementation of these two components on GitHub
-[ScrollBar.vue](https://github.com/Codexmen/yurrik.com/blob/master/components/ScrollBar.vue) and [ScrollListener.vue](https://github.com/Codexmen/yurrik.com/blob/master/components/ScrollListener.vue).
+[ScrollBar.vue](https://github.com/Codexmen/yurrik.com/blob/master/components/ScrollBar.vue){target="_blank"} and [ScrollListener.vue](https://github.com/Codexmen/yurrik.com/blob/master/components/ScrollListener.vue){target="_blank"}.
