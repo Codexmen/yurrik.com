@@ -92,13 +92,13 @@ When we need to fire event when user continue producing it but with less speed. 
 
 - Debounce waits when sequence of events ends
 - Throttle filter out events if they are triggered oftener than need.
-- You could use [lodash](https://lodash.com/docs/4.17.15#debounce) or [underscore](https://underscorejs.org/#throttle) libraries implementation of these functions.
+- You could use [lodash](https://lodash.com/docs/4.17.15#debounce){target="_blank"} or [underscore](https://underscorejs.org/#throttle){target="_blank"} libraries implementation of these functions.
 
 ## Resources
 
 
-- [Debouncing and Throttling Explained Through Examples](https://css-tricks.com/debouncing-throttling-explained-examples/)
-- [Throttling and Debouncing Events with Vue.js and lodash](https://www.digitalocean.com/community/tutorials/vuejs-lodash-throttle-debounce)
-- [How to Implement Debounce and Throttle with JavaScript](https://webdesign.tutsplus.com/tutorials/javascript-debounce-and-throttle--cms-36783)
-- [Debouncing & Throttling in JavaScript](https://medium.com/nerd-for-tech/debouncing-throttling-in-javascript-d36ace200cea)
-- [Demo](https://web.archive.org/web/20220117092326/http://demo.nimius.net/debounce_throttle/)
+- [Debouncing and Throttling Explained Through Examples](https://css-tricks.com/debouncing-throttling-explained-examples/){target="_blank"}
+- [Throttling and Debouncing Events with Vue.js and lodash](https://www.digitalocean.com/community/tutorials/vuejs-lodash-throttle-debounce){target="_blank"}
+- [How to Implement Debounce and Throttle with JavaScript](https://webdesign.tutsplus.com/tutorials/javascript-debounce-and-throttle--cms-36783){target="_blank"}
+- [Debouncing & Throttling in JavaScript](https://medium.com/nerd-for-tech/debouncing-throttling-in-javascript-d36ace200cea){target="_blank"}
+- [Demo](https://web.archive.org/web/20220117092326/http://demo.nimius.net/debounce_throttle/){target="_blank"}

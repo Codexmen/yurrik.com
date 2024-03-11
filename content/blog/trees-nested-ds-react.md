@@ -16,7 +16,7 @@ head:
 
 A tree structure is a widely used data structure in Javascript, particularly in browsers. It can be described succinctly. The main character here is a type `Node` that can contain some data and can also contain children of the same type - `Node`. So, it is a nested data structure that starts from a root node and contains nested nodes with varying levels of depth.
 
-In a browser, we use tree structures so often that we think of them as [Document Object Model (DOM)](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) which is a tree, [React components](https://react.dev/learn/understanding-your-ui-as-a-tree) that contain some children are also trees, even comments with replies on YouTube are also trees. In this article, I try to summarize some basic algorithms and approaches related to trees or graphs.
+In a browser, we use tree structures so often that we think of them as [Document Object Model (DOM)](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction){target="_blank"} which is a tree, [React components](https://react.dev/learn/understanding-your-ui-as-a-tree){target="_blank"} that contain some children are also trees, even comments with replies on YouTube are also trees. In this article, I try to summarize some basic algorithms and approaches related to trees or graphs.
 
 The basic type definition of a tree structure in TypeScript looks like this:
 
@@ -155,7 +155,7 @@ export default function NestedMenu() {
 }
 ```
 
-The output of  `NestedMenu` render will look next way:
+The output of  `NestedMenu` render will looks next way:
 
 <img src="/blog/trees-1.png" alt="Nested menu" style="width: 100%;">
 If you would like to practice on it and get your hands dirty, I have a few ideas for us:
@@ -166,7 +166,7 @@ If you would like to practice on it and get your hands dirty, I have a few ideas
 - Create an editable tree on React where the user could add/edit/delete nodes from the UI
 - As an HTML document is also a tree, try to implement the function `document.getElementByClassName()`
 
-Recap
+## Recap
 
 Trees, graphs, and nested data structures are often used data structures. Basic knowledge about them could be crucial for some everyday developer tasks that might not look connected to them at first glance. The two algorithms that we implemented (BSF and DFS) with modifiers cover 80-90% of everyday usage of tree-related structures. You can easily render nested trees using a React component by passing Tree children to the same component.
 

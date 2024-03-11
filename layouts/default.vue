@@ -20,7 +20,7 @@ const navigation = [
           <v-col class="d-flex">
             <v-hover v-slot="{ isHovering, props }">
               <NuxtLink v-bind="props" :class="isHovering ? 'text-decoration-underline': ''"
-                        class="d-block mr-auto font-weight-black text-decoration-none text-h6" to="/">
+                        class="d-block text-primary mr-auto font-weight-black text-decoration-none text-h6" to="/">
                 Yurii Kovalenko
               </NuxtLink>
             </v-hover>

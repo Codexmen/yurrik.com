@@ -42,9 +42,9 @@ So let's start exploring what services are available right now.
 
 I'm not going to describe how to use each service, but instead, I'll compare these services for you. I hope this helps you decide which mock REST API service to choose for your next prototyping or learning project.
 
-### **{JSON} Placeholder**
+## **{JSON} Placeholder**
 
-[Documentation](https://jsonplaceholder.typicode.com/)
+[Documentation](https://jsonplaceholder.typicode.com/){target="_blank"}
 
 I believe this is the most popular and easiest service to start with. This service has a few linked collections — posts, comments, albums, photos, todos, users.
 The documentation is very limited and doesn't contain much information. I found some query parameters only in GitHub issues. It doesn't provide any information about data schemas and relations.
@@ -61,9 +61,9 @@ Below is a table with features that this service has.
 | Simulating auth              | ❌ No  |
 | Delay for response           | ❌ No  |
 
-### Random User Generator
+## Random User Generator
 
-[Documentation](https://randomuser.me/)
+[Documentation](https://randomuser.me/){target="_blank"}
 
 As indicated by the service name, this is a service solely for mocking users. The response contains a large schema for the user, so you can select only the fields relevant to you. Each response contains random users, but you can control this by passing a seed parameter into the request URL. You can specify a list of fields that you want in the response or those you want to exclude. It also supports additional parameters for random generation, such as specifying gender, password, or nationality. Please refer to the documentation page.
 
@@ -80,9 +80,9 @@ Below is a table with features that this service has.
 | Simulating auth              | ❌ No  |
 | Delay for response           | ❌ No  |
 
-### DummyJSON
+## DummyJSON
 
-[Documentation](https://dummyjson.com/docs)
+[Documentation](https://dummyjson.com/docs){target="_blank"}
 
 DummyJSON has pretty big collection of different entities for mocking like products, cards, recipes, users, posts, comments, todos, quotes. Also contain endpoints for auth and delay responses. Best choice if you prototyping e-commerce project.
 
@@ -99,9 +99,9 @@ For some entities there is possibility to emulate edit, delete and add new items
 | Simulating auth              | ✅ Yes |
 | Delay for response           | ✅ Yes |
 
-### **Fake Store API**
+## **Fake Store API**
 
-[Documentation](https://fakestoreapi.com/)
+[Documentation](https://fakestoreapi.com/){target="_blank"}
 
 This service focuses on mocking entities also related to e-commerce like products, card and users.
 
@@ -116,9 +116,9 @@ This service focuses on mocking entities also related to e-commerce like product
 | Simulating auth              | ✅ Yes |
 | Delay for response           | ❌ No  |
 
-### **SWAPI -** The Star Wars API
+## **SWAPI -** The Star Wars API
 
-[Documentation](https://swapi.tech/)
+[Documentation](https://swapi.tech/){target="_blank"}
 
 Not usual mocking service that contains collection related to Star Wars universe like, films, planets, characters, vehicles, species, starships.
 
@@ -133,9 +133,9 @@ Not usual mocking service that contains collection related to Star Wars universe
 | Simulating auth              | ❌ No  |
 | Delay for response           | ❌ No  |
 
-### **Cat Facts API**
+## **Cat Facts API**
 
-[Documentation](https://catfact.ninja/)
+[Documentation](https://catfact.ninja/){target="_blank"}
 
 A pretty small mock API services that contains 2 endpoints that returns cat breeds and facts about cats
 
@@ -150,9 +150,9 @@ A pretty small mock API services that contains 2 endpoints that returns cat bree
 | Simulating auth              | ❌  No |
 | Delay for response           | ❌  No |
 
-### **REST Countries**
+## **REST Countries**
 
-[Documentation](https://restcountries.com/#rest-countries)
+[Documentation](https://restcountries.com/#rest-countries){target="_blank"}
 
 Small mock API service that have collection of countries with comprehensive list of fields.
 
@@ -169,7 +169,7 @@ Supports filtering and searching by fields and white-listing fields returned fro
 | Simulating auth              | ❌  No |
 | Delay for response           | ❌  No |
 
-### Conclusion
+## Conclusion
 
 In this article, I have summarized the most popular completely free mock API services that you could use for the learning process. They support different features, so choose one that fits exactly for your case.
 
