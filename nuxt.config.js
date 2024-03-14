@@ -14,6 +14,7 @@ export default defineNuxtConfig({
     css: ['~/assets/css/main.css'],
     modules: [
         '@nuxt/content',
+        '@nuxtjs/seo',
         'nuxt-gtag',
         '@invictus.codes/nuxt-vuetify',
     ],
@@ -47,5 +48,11 @@ export default defineNuxtConfig({
         highlight: {
             theme: 'github-dark',
         }
-    }
+    },
+  site: {
+    url: 'https://yuriik.com',
+    name: 'Kovalenko Yurii',
+    description: 'Personal blog of Kovalenko Yurii',
+    defaultLocale: 'en',
+  }
 });
