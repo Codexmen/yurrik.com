@@ -1,7 +1,7 @@
 <template>
   <v-col>
     <HeroSection class="mb-8"/>
-    <RecentPosts limit="4"/>
+    <RecentPosts :limit="4"/>
   </v-col>
 </template>
 
