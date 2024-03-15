@@ -27,4 +27,9 @@
 .article-body table  tbody td {
   padding: 5px 0;
 }
+@media (max-width: 600px) {
+  .article-body table {
+    width: 100%;
+  }
+}
 </style>

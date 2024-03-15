@@ -1,8 +1,7 @@
 <template>
   <PageTitle title="About me"/>
   <p>Hey there! I&#x27;m Yurii Kovalenko, a frontend developer since
-    2010 originally from Melitopol, Ukraine🇺🇦. Presently, I&#x27;m residing in Poland 🇵🇱 due to the Russian-Ukrainian
-    war.</p>
+    2010 originally from Melitopol, Ukraine🇺🇦. Presently, I&#x27;m residing in Poland 🇵🇱 due to the Russian invasion of Ukraine</p>
   <p>There I try to enhance my writing skills and share my
     experiences.</p>
   <h3>Background</h3>

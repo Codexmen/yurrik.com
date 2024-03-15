@@ -53,7 +53,7 @@ Below is a table with features that this service has.
 ||   |
 |------------------------------|-----|
 | Amount of collections        | 6   |
-| Relation between collections:   |   ✅ Yes |
+| Relation between collections |   ✅ Yes |
 | Pagination                   | ✅ Yes |
 | Filtering                    | ✅ Yes |
 | Sorting                      | ❌ No  |
