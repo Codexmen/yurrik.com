@@ -1,6 +1,6 @@
 <script setup>
 import PostListItem from "./PostListItem.vue";
-
+import usePosts from '/composables/usePosts'
 const props = defineProps({
   limit: {
     type: Number,
@@ -8,7 +8,7 @@ const props = defineProps({
   },
 })
 
-const {data: posts} = await usePosts(props.limit);
+const {data: posts} = await usePosts('home', props.limit);
 </script>
 
 <template>

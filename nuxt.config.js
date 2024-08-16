@@ -46,7 +46,7 @@ export default defineNuxtConfig({
             anchorLinks: false,
         },
         highlight: {
-            theme: 'github-dark',
+            theme: 'vitesse-dark',
         }
     },
   site: {

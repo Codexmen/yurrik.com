@@ -1,4 +1,4 @@
-export default async function usePosts(limit = 10) {
+export default async function usePosts(key = 'posts', limit = 10) {
     return useAsyncData('posts-list',
     () => queryContent()
         .only(['title','_path', 'summary','length','order', 'date'])

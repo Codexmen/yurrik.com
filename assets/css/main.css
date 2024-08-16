@@ -30,9 +30,15 @@ pre {
     margin: 24px 0;
     overflow: auto;
     padding: 16px;
+    font-size: 16px;
 }
 
 h2, h3 {
     margin-top: 2rem;
     margin-bottom: 1rem;
+}
+
+.shiki-themes.vitesse-dark {
+  background-color:#121212;
+  color:#dbd7caee;
 }
