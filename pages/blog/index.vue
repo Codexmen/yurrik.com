@@ -6,7 +6,7 @@ useSeoMeta({
   description: 'Recent posts of Yurii Kovalenko blog',
   keywords: 'blog posts, javascript, vue, nuxt',
 })
-const {data: posts} = await usePosts();
+const {data: posts} = await usePosts('posts-list');
 </script>
 <template>
   <BaseNarrowPage>
